@@ -1,8 +1,9 @@
-package Training.Selenium;
+package resources;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,8 +19,7 @@ public class base {
 
 		String usrdir = System.getProperty("user.dir");
 		prop = new Properties();
-		FileInputStream datafile = new FileInputStream(
-				usrdir + "\\src\\main\\java\\Training\\Selenium\\data.properties");
+		FileInputStream datafile = new FileInputStream(usrdir + "\\src\\main\\java\\resources\\data.properties");
 		prop.load(datafile);
 
 		String broswer = prop.getProperty("browser");
@@ -35,7 +35,7 @@ public class base {
 			System.setProperty("webdriver.edge.driver", usrdir + "\\MicrosoftWebDriver.exe");
 			driver = new EdgeDriver();
 		}
-
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 
