@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24054" started-at="2018-11-06T11:24:28Z" finished-at="2018-11-06T11:24:52Z">
+  <suite name="Default suite" duration-ms="8829" started-at="2018-11-07T11:29:15Z" finished-at="2018-11-07T11:29:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24054" started-at="2018-11-06T11:24:28Z" finished-at="2018-11-06T11:24:52Z">
-      <class name="Training.Selenium.TestClass">
-        <test-method status="PASS" signature="homepage()[pri:0, instance:Training.Selenium.TestClass@59fa1d9b]" name="homepage" duration-ms="24025" started-at="2018-11-06T11:24:28Z" finished-at="2018-11-06T11:24:52Z">
+    <test name="Default test" duration-ms="8829" started-at="2018-11-07T11:29:15Z" finished-at="2018-11-07T11:29:24Z">
+      <class name="Training.Selenium.ValidateTitle">
+        <test-method status="PASS" signature="homepage()[pri:0, instance:Training.Selenium.ValidateTitle@59fa1d9b]" name="homepage" duration-ms="8802" started-at="2018-11-07T11:29:15Z" finished-at="2018-11-07T11:29:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepage -->
-      </class> <!-- Training.Selenium.TestClass -->
+      </class> <!-- Training.Selenium.ValidateTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
