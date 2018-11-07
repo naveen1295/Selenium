@@ -13,31 +13,23 @@ public class LoginPage {
 	}
 
 	By emailid = By.id("user_email");
-	By password = By.cssSelector("[type='password']");
+	By passwrd = By.cssSelector("[type='password']");
 	By login = By.cssSelector("[value='Log In']");
 
-	public WebElement getemailid() {
-		return driver.findElement(emailid);
-	}
-
-	public WebElement getpassword() {
-		return driver.findElement(password);
-	}
-
-	public WebElement getlogin() {
-		return driver.findElement(login);
+	public WebElement getwebelement(By locator) {
+		return driver.findElement(locator);
 	}
 
 	public void enteremailid(String email) {
-		getemailid().sendKeys(email);
+		getwebelement(emailid).sendKeys(email);
 	}
 
 	public void enterpassword(String password) {
-		getpassword().sendKeys(password);
+		getwebelement(passwrd).sendKeys(password);
 	}
 
 	public void clicklogin() {
-		getlogin().click();
+		getwebelement(login).click();
 	}
 
 }

@@ -13,13 +13,18 @@ public class HomePage {
 	}
 
 	By signin = By.cssSelector("a[href*='sign_in']");
+	By title = By.cssSelector(".text-center > h2");
 
-	public WebElement loginlink() {
-		return driver.findElement(signin);
+	public WebElement getwebelement(By locator) {
+		return driver.findElement(locator);
+	}
+
+	public String gettitle() {
+		return getwebelement(title).getText();
 	}
 
 	public void clicklogin() {
-		loginlink().click();
+		getwebelement(signin).click();
 	}
 
 }
